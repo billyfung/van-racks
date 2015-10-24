@@ -1,14 +1,22 @@
 development: &DEVELOPMENT
   adapter: postgresql
+  encoding: unicode
   database: adopt_a_thing_development
-  host: localhost
+  pool: 5
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *DEVELOPMENT
+  adapter: postgresql
+  encoding: unicode	
   database: adopt_a_thing_test
+  pool: 5
+
 
 production:
-  <<: *DEVELOPMENT
+  adapter: postgresql
+  encoding: unicode	
+  database: adopt_a_thing_production
+  pool: 5
+
