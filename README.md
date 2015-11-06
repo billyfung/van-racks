@@ -13,8 +13,8 @@ Bike rack data obtained from the City of Vancouver. Put into the db/seeds.rb fil
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
 
-    git clone git://github.com/codeforamerica/adopt-a-hydrant.git
-    cd adopt-a-hydrant
+    git clone git:https://github.com/billyfung/van-racks
+    cd van-racks
     bundle install
 
     bundle exec rake db:create
