@@ -1,6 +1,6 @@
 # Adopt-a-Rack
 
-Claim responsibility for shoveling out a bike rack
+Claim responsibility for a bike rack
 
 ##Screenshot
 ![Adopt-a-Rack](https://github.com/billyfung/van-racks/raw/master/screenshot.png "Adopt-a-Rack")
