@@ -2,11 +2,15 @@
 
 Claim responsibility for shoveling out a bike rack
 
+##Screenshot
+![Adopt-a-Rack](https://github.com/billyfung/van-racks/raw/master/screenshot.png "Adopt-a-Rack")
+
 ## Demo
 You can see a running version of the application at
-[http://adopt-a-hydrant.herokuapp.com/][demo].
+[http://vanracks.herokuapp.com][demo].
 
 [demo]: http://vanracks.herokuapp.com/
+
 
 Bike rack data obtained from the City of Vancouver. Put into the db/seeds.rb file.
 
