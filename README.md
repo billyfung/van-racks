@@ -1,20 +1,14 @@
-# Adopt-a-Hydrant
+# Adopt-a-Rack
 
-[![Build Status](http://img.shields.io/travis/codeforamerica/adopt-a-hydrant.svg)][travis]
-[![Dependency Status](http://img.shields.io/gemnasium/codeforamerica/adopt-a-hydrant.svg)][gemnasium]
-[![Coverage Status](http://img.shields.io/coveralls/codeforamerica/adopt-a-hydrant.svg)][coveralls]
-
-[travis]: http://travis-ci.org/codeforamerica/adopt-a-hydrant
-[gemnasium]: https://gemnasium.com/codeforamerica/adopt-a-hydrant
-[coveralls]: https://coveralls.io/r/codeforamerica/adopt-a-hydrant
-
-Claim responsibility for shoveling out a fire hydrant after it snows.
+Claim responsibility for shoveling out a bike rack
 
 ## Demo
 You can see a running version of the application at
 [http://adopt-a-hydrant.herokuapp.com/][demo].
 
-[demo]: http://adopt-a-hydrant.herokuapp.com/
+[demo]: http://vanracks.herokuapp.com/
+
+Bike rack data obtained from the City of Vancouver. Put into the db/seeds.rb file.
 
 ## Installation
 This application requires [Postgres](http://www.postgresql.org/) to be installed
@@ -67,15 +61,12 @@ Keep in mind that the Heroku free Postgres plan only allows up to 10,000 rows,
 so if your city has more than 10,000 fire hydrants (or other thing to be
 adopted), you will need to upgrade to the $9/month plan.
 
-### Google Analytics
-If you have a Google Analytics account you want to use to track visits to your
-deployment of this app, just set your ID and your domain name as environment
-variables:
 
-    heroku config:set GOOGLE_ANALYTICS_ID=your_id
-    heroku config:set GOOGLE_ANALYTICS_DOMAIN=your_domain_name
+If you run into troubles with the database:
 
-An example ID is `UA-12345678-9`, and an example domain is `adoptahydrant.org`.
+heroku pg:reset
+
+then migrate the db and seed again
 
 
 ## Supported Ruby Version
