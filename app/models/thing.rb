@@ -12,7 +12,7 @@ class Thing < ActiveRecord::Base
   validates :lat, presence: true
   validates :lng, presence: true
 
-  def self.find_closest(lat, lng, limit = 10)
+  def self.find_closest(lat, lng, limit = 40)
     query = <<-SQL
       SELECT *, (3959 * ACOS(COS(RADIANS(?)) * COS(RADIANS(lat)) * COS(RADIANS(lng) - RADIANS(?)) + SIN(RADIANS(?)) * SIN(RADIANS(lat)))) AS distance
       FROM things
