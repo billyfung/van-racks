@@ -68,7 +68,7 @@ adopted), you will need to upgrade to the $9/month plan.
 
 If you run into troubles with the database:
 
-'heroku pg:reset'
+`heroku pg:reset`
 
 then migrate the db and seed again
 
